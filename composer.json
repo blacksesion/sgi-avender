@@ -1,15 +1,15 @@
 {
-    "name": "apimatic/sgiavender",
+    "name": "blacksesion/sgiavender",
     "type": "library",
     "description": "TODO: add library description",
     "keywords": ["SGI - Avender","API","SDK"],
-    "homepage": "https://apimatic.io",
+    "homepage": "https://blacksesion.com",
     "license": "MIT",
     "authors": [
         {
-            "name": "APIMatic SDK Generator",
-            "email": "support@apimatic.io",
-            "homepage": "https://apimatic.io",
+            "name": "BlackSesion",
+            "email": "blacksesion@gmail.com",
+            "homepage": "https://blacksesion.com",
             "role": "API Tool"
         }
     ],
