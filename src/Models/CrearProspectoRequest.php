@@ -80,9 +80,9 @@ class CrearProspectoRequest implements JsonSerializable
     /**
      * @todo Write general description for this property
      * @required
-     * @var string $fono public property
+     * @var string $telefono public property
      */
-    public $fono;
+    public $telefono;
 
     /**
      * @todo Write general description for this property
@@ -102,7 +102,7 @@ class CrearProspectoRequest implements JsonSerializable
      * @param integer $idDivision    Initialization value for $this->idDivision
      * @param string  $nombre        Initialization value for $this->nombre
      * @param string  $email         Initialization value for $this->email
-     * @param string  $fono          Initialization value for $this->fono
+     * @param string  $telefono          Initialization value for $this->telefono
      * @param string  $comentario    Initialization value for $this->comentario
      */
     public function __construct()
@@ -117,7 +117,7 @@ class CrearProspectoRequest implements JsonSerializable
             $this->idDivision    = func_get_arg(6);
             $this->nombre        = func_get_arg(7);
             $this->email         = func_get_arg(8);
-            $this->fono          = func_get_arg(9);
+            $this->telefono          = func_get_arg(9);
             $this->comentario    = func_get_arg(10);
         }
     }
@@ -138,7 +138,7 @@ class CrearProspectoRequest implements JsonSerializable
         $json['idDivision']    = $this->idDivision;
         $json['nombre']        = $this->nombre;
         $json['email']         = $this->email;
-        $json['fono']          = $this->fono;
+        $json['telefono']          = $this->telefono;
         $json['comentario']    = $this->comentario;
 
         return $json;

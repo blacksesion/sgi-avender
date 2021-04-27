@@ -38,15 +38,16 @@ class MiscController extends BaseController
         if (null === static::$instance) {
             static::$instance = new static();
         }
-        
+
         return static::$instance;
     }
+
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\DivisionesRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function divisiones(
@@ -87,13 +88,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\MarcasRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function marcas(
@@ -134,13 +138,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\ModelosRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function modelos(
@@ -181,13 +188,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\RegionesRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function regiones(
@@ -228,13 +238,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\ComunasRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function comunas(
@@ -275,13 +288,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\SucursalesRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function sucursales(
@@ -322,13 +338,16 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 
     /**
      * @todo Add general description for this endpoint
      *
      * @param Models\CrearProspectoRequest $body TODO: type description here
-     * @return void response from the API call
+     * @return string response from the API call
      * @throws APIException Thrown if API call fails
      */
     public function crearProspecto(
@@ -369,5 +388,8 @@ class MiscController extends BaseController
 
         //handle errors defined at the API level
         $this->validateResponse($_httpResponse, $_httpContext);
+
+        //return de content of te response
+        return $_httpResponse->getRawBody();
     }
 }
